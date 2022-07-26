@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSs -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
+    <title>Badec</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="theme">
+          <input type="checkbox" id="checkbox" class="checkbox">
+          <label class="label" for="checkbox">
+            <div class="ball"></div>
+          </label>
+        </div>
+        </div>
+        <img src="{% static 'images/Logo1.svgz' %}" alt="" class="logo" />
+        <ul class="nav-list">
+          <li><a href="{%url 'home'%}">Accueil</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a class="ctn" href=" {% url 'reservationsalle' %} ">Reserver une salle</a></li>
+        </ul> 
+      </nav>
+  
+<section id="appointement">
+    <div class ="conteneur">
+        <div class="formulair">
+          <h3 class="title">Réserver une salle</h3>
+            <form action="#" method ="post">
+                <input placeholder="Nom" name="Nom" type="text" required="" class="Nom">
+                <input placeholder="Prénom" name="Prénom" type="text" required="" class="Prénom">
+                <input placeholder="Téléphone" name="Numéro de téléphone" type="text" required="" class="tel">
+                <input placeholder="Adresse email" name="Email" type="email" required="" class="email">
+                <input name="Date de réservation" type="date" required="" class="date">
+                <input placeholder="Salle souhaité" name="Salle" type="number" required="" class="salle">
+                <input placeholder="Reserver l'horaire souhaité" name="time" type="text" required="" class="horaire">
+                <button class="submit-btn" href=" {% url 'paiement' %} ">Soumettre</button>
+            </form>
+        </div>
+        <div class="formaulair-image">
+            <img src="{% static 'images/hero-img.svg' %}" alt="">
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="grid-wrapper">
+          <div class="col-4 footer1">
+            <h1>BADEC</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+              dolor cumque debitis unde voluptates rerum, quae eligendi esse
+              laboriosam ipsum!
+            </p>
+            <div class="social-profiles">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="col-4 footer2">
+            <h1>Contact info</h1>
+            <h4>BADEC </h4>
+            <h4>N'Djaména ,Tchad</h4>
+            <h4>(+235)98 52 96 03</h4>
+            <h4>badec@gmail.com</h4>
+            <h4>website.com</h4>
+          </div>
+          <div class="col-4 footer3">
+            <h1>About Us</h1>
+            <h4>Company</h4>
+            <h4>Projects</h4>
+            <h4>Events</h4>
+            <h4>Awards</h4>
+            <h4>Open Source</h4>
+          </div>
+          <div class="col-4 footer4">
+            <h1>Custom Software</h1>
+            <h4>Web Design</h4>
+            <h4>Projects</h4>
+            <h4>App Development</h4>
+            <h4>Awards</h4>
+            <h4>Open Source</h4>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <h4>Copyright badec. Tout droit reservé</h4>
+          <h4>Term & Use</h4>
+          <h4>Privacy Policy</h4>
+        </div>
+        <!-- Scroll to top btn -->
+        <i id="scrolltp" class="fa fa-arrow-up"></i>
+      </section>
+  
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 200,
+          delay: 100,
+          duration: 1000,
+        });
+      </script>
+      
+      <!-- App .js -->
+      <script src="{% static 'js/app.js' %}"></script>
+  
+    </body>
+    </html>
+

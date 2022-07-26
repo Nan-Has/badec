@@ -42,13 +42,14 @@ body a {
 
 /* Header */
 header {
-  background-image: url("../images/header-bg.png");
+  background-image: url("../images/header-bg1.png");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 100vh;
   min-width: 100vw;
 }
 .navbar {
+  background-color: linear-gradient(to bottom right, #2af598, #fd9c00);
   position: absolute;
   top: 0;
   left: 0;
@@ -67,7 +68,7 @@ header {
   margin: 0 25px;
 }
 .logo {
-  width: 300px;
+  width: 90px;
 }
 .ctn {
   padding: 10px 50px;
@@ -548,4 +549,201 @@ body.dark .team .team-h1 {
   100% {
     transform: scale(1.2);
   }
+}
+
+/* reservation salle  section*/
+section#appointement {
+  background: linear-gradient(to bottom right, #2af598, #fd9c00);
+  padding: 80px 0;
+}
+
+.conteneur {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: rgb(255, 255, 255);
+  height: 540px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 50px -10px black;
+}
+
+.conteneur form .formulair {
+  width: 50px;
+  margin-right: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.conteneur .title {
+  font-size: 7vmin;
+  margin-bottom: 50px;
+  margin-top: -5rem;
+  color: #f4ad07; 
+}
+.conteneur .formaulair-image img{
+  width: 20%;
+  background-color: linear-gradient(to bottom right, #2af598, #fd9c00);
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+.conteneur .imge {
+  width: 100px;
+  
+}
+
+.conteneur .formulair input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(174, 174, 173);
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.conteneur .formulair .form input:hover {
+  border-bottom: 2px solid rgb(255, 204, 0);
+}
+
+.conteneur .formulair .form input.Nom,
+.conteneur .formulair input.Prénom {
+  width: 45%;
+}
+
+.conteneur .formulair input.tel,
+.conteneur .formulair input.email {
+  width: 45%;
+}
+
+.conteneur .formulair input.date,
+.conteneur .formulair input.salle,
+.conteneur .formulair input.horaire {
+  width: 30%;
+}
+.conteneur .formulair button.submit-btn {
+  padding: 20px 50px;
+  color: white;
+  background: var(--gradient-2);
+  border: none;
+  font-size: 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 2px rgba(27, 64, 2, 0.479);
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+section#paiement .containere{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:100px 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #2af598, #fd9c00);
+}
+
+section#paiement .containere form{
+  padding:10px;
+  width:700px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 50px -10px black;
+}
+
+.containere form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.containere form .row .col{
+  flex:1 1 250px;
+}
+
+.containere form .row .col .title{
+  font-size: 45px;
+  margin-bottom: 30px;
+  margin-top: -5rem;
+  color: #f4ad07;
+}
+
+.containere form .row .col .inputBox{
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.containere form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.containere form .row .col .inputBox input{
+  width: 100%;
+  border:none;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-bottom: 2px solid rgb(174, 174, 173);
+}
+
+.containere form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.containere form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.containere form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.containere form .row .col .inputBox img{
+  height: 45px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.containere form .submit-btn{
+  padding: 20px 50px;
+  width: 100%;
+  color: white;
+  background: var(--gradient-2);
+  border: none;
+  font-size: 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 2px rgba(27, 64, 2, 0.479);
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+}
+
+.containere form .submit-btn:hover{
+  background: #2ecc71;
 }

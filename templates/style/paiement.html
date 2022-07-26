@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSs -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
+    <title>Badec</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="theme">
+          <input type="checkbox" id="checkbox" class="checkbox">
+          <label class="label" for="checkbox">
+            <div class="ball"></div>
+          </label>
+        </div>
+        </div>
+        <img src="{% static 'images/Logo1.svgz' %}" alt="" class="logo" />
+        <ul class="nav-list">
+          <li><a href="{% url 'home'%} ">Accueil</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a class="ctn" href=" {% url 'reservationsalle' %} ">Reserver une salle</a></li>
+        </ul> 
+      </nav>
+      <section id="paiement">
+        <div class="containere">
+
+            <form action="">
+    
+                <div class="row">
+    
+                    <div class="col">
+      
+                        <h3 class="title">Mode de paiement</h3>
+    
+                        <div class="inputBox">
+                            <span>Cartes possibles</span>
+                            <img src="{% static 'images/card_img.png' %}" alt="">
+                        </div>
+                        <div class="inputBox">
+                            <input placeholder="Nom sur la carte" name="Nom" type="text" required="" class="Nom">
+                        </div>
+                        <div class="inputBox">
+                            <input placeholder=" Numero de la carte : 1111-2222-3333-4444" name="number" type="text" required="" class="carte">
+                        </div>
+                        <div class="inputBox">
+                            <input placeholder="Janvier" name="Mois" type="text" required="" class="mois">
+                        </div>
+    
+                        <div class="flex">
+                            <div class="inputBox">
+                                <input placeholder="2022" name="annee" type="text" required="" class="annee">
+                            </div>
+                            <div class="inputBox">
+                                <input placeholder="123" name="cvv" type="text" required="" class="cvv">
+                            </div>
+                        </div>
+    
+                    </div>
+        
+                </div>
+    
+                <input type="submit" value="Procéder au paiement" class="submit-btn">
+    
+            </form>
+    
+        </div>  
+    </section>
+          <!-- Footer -->
+    <section class="footer">
+        <div class="grid-wrapper">
+          <div class="col-4 footer1">
+            <h1>BADEC</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+              dolor cumque debitis unde voluptates rerum, quae eligendi esse
+              laboriosam ipsum!
+            </p>
+            <div class="social-profiles">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="col-4 footer2">
+            <h1>Contact info</h1>
+            <h4>BADEC </h4>
+            <h4>N'Djaména ,Tchad</h4>
+            <h4>(+235)98 52 96 03</h4>
+            <h4>badec@gmail.com</h4>
+            <h4>website.com</h4>
+          </div>
+          <div class="col-4 footer3">
+            <h1>About Us</h1>
+            <h4>Company</h4>
+            <h4>Projects</h4>
+            <h4>Events</h4>
+            <h4>Awards</h4>
+            <h4>Open Source</h4>
+          </div>
+          <div class="col-4 footer4">
+            <h1>Custom Software</h1>
+            <h4>Web Design</h4>
+            <h4>Projects</h4>
+            <h4>App Development</h4>
+            <h4>Awards</h4>
+            <h4>Open Source</h4>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <h4>Copyright badec. Tout droit reservé</h4>
+          <h4>Term & Use</h4>
+          <h4>Privacy Policy</h4>
+        </div>
+        <!-- Scroll to top btn -->
+        <i id="scrolltp" class="fa fa-arrow-up"></i>
+      </section>
+  
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 200,
+          delay: 100,
+          duration: 1000,
+        });
+      </script>
+      
+      <!-- App .js -->
+      <script src="{% static 'js/app.js' %}"></script>
+
+            <!-- Scroll to top btn -->
+            <i id="scrolltp" class="fa fa-arrow-up"></i>
+        </section>
+    
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
+          });
+        </script>
+        
+        <!-- App .js -->
+        <script src="{% static 'js/app.js' %}"></script>
+  
+    </body>
+    </html>
